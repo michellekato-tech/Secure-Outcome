@@ -1,0 +1,129 @@
+.prediction-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.prediction-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prediction-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.4rem;
+}
+
+.prediction-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 1.5rem;
+  border: 1px solid rgba(27, 27, 29, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 20px 45px rgba(27, 27, 29, 0.08);
+}
+
+.prediction-card header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.prediction-id {
+  margin: 0 0 0.4rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--ink-muted);
+}
+
+.status-pill {
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.status-open {
+  background: rgba(73, 177, 154, 0.2);
+  color: #1b5f5a;
+}
+
+.status-closed {
+  background: rgba(27, 27, 29, 0.12);
+  color: var(--ink-muted);
+}
+
+.prediction-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+}
+
+.option-list {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.option-pill {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 14px;
+  border: 1px solid rgba(27, 27, 29, 0.15);
+  background: rgba(255, 255, 255, 0.8);
+  text-align: left;
+}
+
+.option-pill.selected {
+  border-color: #ff6b4a;
+  box-shadow: 0 0 0 2px rgba(255, 107, 74, 0.2);
+}
+
+.option-pill strong {
+  font-size: 0.95rem;
+}
+
+.bet-form {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.bet-reveal,
+.totals-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 14px;
+  background: rgba(27, 27, 29, 0.04);
+}
+
+.totals-list {
+  display: grid;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.totals-list div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.empty-state {
+  padding: 1.2rem 1.5rem;
+  border-radius: 14px;
+  border: 1px dashed rgba(27, 27, 29, 0.2);
+  background: rgba(255, 255, 255, 0.7);
+  color: var(--ink-muted);
+}

@@ -1,0 +1,43 @@
+.swap-panel {
+  min-height: 100%;
+}
+
+.swap-form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.balance-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  background: rgba(27, 27, 29, 0.04);
+}
+
+.balance-label {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--ink-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.balance-value {
+  margin: 0.3rem 0 0;
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+.balance-reveal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  background: rgba(255, 179, 71, 0.15);
+  font-weight: 600;
+}

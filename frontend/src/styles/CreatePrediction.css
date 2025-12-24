@@ -1,0 +1,27 @@
+.create-panel {
+  min-height: 100%;
+}
+
+.create-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.options-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.options-grid {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.option-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.6rem;
+  align-items: center;
+}
